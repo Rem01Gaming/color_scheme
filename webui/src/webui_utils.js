@@ -8,7 +8,7 @@ async function changeRGB(red_a, green_a, blue_a) {
 }
 
 async function changeSaturation(sat_a) {
-  const sat = sat_a / 2000;
+  const sat = sat_a / 1000;
   await exec(`service call SurfaceFlinger 1022 f ${sat}`);
 }
 
