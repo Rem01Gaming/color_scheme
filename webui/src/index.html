@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" type="text/css" rel="stylesheet">
+  <script type="module" src="webui_utils.js"></script>
+  <script src="mmrl_css.js"></script>
+</head>
+<body class="bg-black text-white flex justify-center min-h-screen root_layout">
+  <div class="p-3 text-sm w-full max-w-2xl">
+    <h1 class="text-left text-lg font-semibold mb-4">Color Scheme</h1>
+    <!-- Carousel -->
+    <div class="carousel rounded-box mb-10">
+      <div class="carousel-item w-full">
+        <img
+          class="rounded-lg w-full aspect-video object-cover"
+          src="./pencils.webp"
+          alt="Pencils"
+        />
+      </div>
+      <div class="carousel-item w-full">
+        <img
+          class="rounded-lg w-full aspect-video object-cover"
+          src="./preview.webp"
+          alt="Preview"
+        />
+      </div>
+    </div>
+
+    <!-- Color settings -->
+    <div class="m-3">
+      <p class="mb-2">Red</p>
+      <input type="range" min="0" max="1000" value="1000" id="red" class="range range-xs [--range-shdw:#EA6661]" />
+    </div>
+    <div class="m-3">
+      <p class="mb-2">Green</p>
+      <input type="range" min="0" max="1000" value="1000" id="green" class="range range-xs [--range-shdw:#73E875]" />
+    </div>
+    <div class="m-3">
+      <p class="mb-2">Blue</p>
+      <input type="range" min="0" max="1000" value="1000" id="blue" class="range range-xs [--range-shdw:#6262F4]" />
+    </div>
+    <div class="m-3">
+      <p class="mb-2">Saturation</p>
+      <input type="range" min="0" max="2000" value="1000" id="saturation" class="range range-xs [--range-shdw:#0079C8]" />
+    </div>
+
+    <!-- Reset btn -->
+    <div class="mt-10">
+      <button id="reset-btn" class="btn btn-error btn-block">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12" />
+      </svg>
+      Reset Color Settings
+      </button>
+    </div>
+  </div>
+</body>
+</html>

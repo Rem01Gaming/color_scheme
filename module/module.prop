@@ -1,0 +1,6 @@
+id=color_scheme
+name=Color Scheme
+version=
+versionCode=
+author=@Rem01Gaming
+description=Display color calibration without kernel level support with surfaceflinger.
