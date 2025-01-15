@@ -4,3 +4,4 @@ version=
 versionCode=
 author=@Rem01Gaming
 description=Display color calibration without kernel level support with surfaceflinger.
+updateJson=https://raw.githubusercontent.com/Rem01Gaming/color_scheme/main/update.json
